@@ -1,0 +1,30 @@
+$hover-color: #e2ba48;
+$main-color: rgba(255, 255, 255, 0.8);
+
+@mixin alignCenter() {
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 1260px;
+}
+.section-title {
+    font-size: 2.5rem;
+    color: #3c3451;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+.nav-link {
+    font-size: 14px;
+    color: $main-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+        color: $hover-color;
+        transition: all 0.35s ease-in-out;
+    }
+}
+
